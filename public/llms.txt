@@ -1,0 +1,29 @@
+# Delta V
+
+> Delta V accelerates adoption of decentralized technologies for businesses and individuals.
+
+## What we do
+
+Delta V is a tech consultancy specialising in decentralized technologies, operating in EU and Swiss markets.
+
+We offer four service lines:
+
+- **Tech Foundations** — web and mobile app development, IT infrastructure, Web3 integration
+- **Growth Boost** — strategic expansion support for EU and Swiss markets, public good advocacy and fundraising
+- **Cybersecurity** — privacy and security audits, GenAI & agent development, CryptoSec, threat monitoring
+- **Research Services** — market research reports, on-chain and OSINT analysis, training
+
+## Why Delta V
+
+We are tech natives — professionals who build, operate, and live the decentralized stack. Every solution we deliver prioritises user self-ownership through decentralized tools.
+
+## Contact
+
+- Email: contact@deltav.cc
+- Signal: @DeltaV.01 (end-to-end encrypted)
+
+## Pages
+
+- [Home](https://deltav.cc/)
+- [CGU / Terms of Use](https://deltav.cc/cgu)
+- [Privacy Policy](https://deltav.cc/privacy)
