@@ -1,9 +1,21 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'motion/react'
 import { stagger, lineReveal, fadeUp, fadeIn, EASE } from '../animations'
 
+const ANIMATION_SRC = 'https://joannezichenpeng.github.io/amaranth/'
+
 export default function Hero() {
+  const [iframeSrc, setIframeSrc] = useState(null)
   const [gifLoaded, setGifLoaded] = useState(false)
+
+  useEffect(() => {
+    const id = typeof requestIdleCallback !== 'undefined'
+      ? requestIdleCallback(() => setIframeSrc(ANIMATION_SRC))
+      : setTimeout(() => setIframeSrc(ANIMATION_SRC), 200)
+    return () => typeof cancelIdleCallback !== 'undefined'
+      ? cancelIdleCallback(id)
+      : clearTimeout(id)
+  }, [])
 
   return (
     <section
@@ -12,17 +24,19 @@ export default function Hero() {
     >
       {/* Background animation */}
       <div className="absolute inset-0 overflow-hidden">
-        <motion.iframe
-          src="https://joannezichenpeng.github.io/amaranth/"
-          title="Generative animation"
-          className="absolute inset-0 w-full h-full border-0"
-          style={{ pointerEvents: 'none' }}
-          sandbox="allow-scripts allow-same-origin"
-          onLoad={() => setGifLoaded(true)}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: gifLoaded ? 0.38 : 0 }}
-          transition={{ duration: 2, ease: 'easeOut' }}
-        />
+        {iframeSrc && (
+          <motion.iframe
+            src={iframeSrc}
+            title="Generative animation"
+            className="absolute inset-0 w-full h-full border-0"
+            style={{ pointerEvents: 'none' }}
+            sandbox="allow-scripts allow-same-origin"
+            onLoad={() => setGifLoaded(true)}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: gifLoaded ? 0.38 : 0 }}
+            transition={{ duration: 2, ease: 'easeOut' }}
+          />
+        )}
         <div
           className="absolute bottom-0 left-0 right-0"
           style={{
