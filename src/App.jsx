@@ -1,4 +1,3 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
@@ -23,14 +22,8 @@ function Home() {
   )
 }
 
-export default function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cgu" element={<Cgu />} />
-        <Route path="/privacy" element={<Privacy />} />
-      </Routes>
-    </BrowserRouter>
-  )
-}
+export const routes = [
+  { path: '/', element: <Home /> },
+  { path: '/cgu', element: <Cgu /> },
+  { path: '/privacy', element: <Privacy /> },
+]
