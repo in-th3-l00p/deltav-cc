@@ -5,116 +5,136 @@ export default function Privacy() {
   return (
     <LegalLayout
       title="Privacy Policy"
-      subtitle="Last updated: January 1, 2025"
+      subtitle="Last Updated: March 30, 2025"
     >
-      <Section title="1. Who we are">
+      <Section title="1. Our Commitment">
         <P>
-          Delta V operates deltav.cc and is committed to protecting your personal data
-          in accordance with the EU General Data Protection Regulation (GDPR) and the
-          Swiss Federal Act on Data Protection (nFADP).
-        </P>
-        <P>
-          Data controller: Delta V — contact@deltav.cc
+          Delta V SRL ("Delta V", "we", "us", or "our") goes beyond legal minimums to protect
+          your privacy. While compliant with the General Data Protection Regulation (GDPR) and
+          Romanian Law No. 506/2004, we adopt stricter standards to ensure your data is handled
+          with the utmost care, transparency, and respect. This Privacy Policy explains how we
+          collect, use, and safeguard your personal data when you use deltav.com (the "Site") or
+          our services.
         </P>
       </Section>
 
-      <Section title="2. Data we collect">
+      <Section title="2. Data Controller">
         <P>
-          We collect only the minimum data necessary to operate our services. This may include:
+          Delta V SRL, registered with the Trade Registry under number [51301377], located at
+          [Bucharest], Romania, is the data controller. Contact: contact@deltav.cc or Signal
+          @DeltaV.01.
         </P>
+      </Section>
+
+      <Section title="3. Data We Collect">
+        <P>We collect only what's strictly necessary:</P>
         <Ul items={[
-          'Contact information you provide voluntarily (email address, name)',
-          'Technical data such as IP address and browser type, collected automatically when you visit the site',
-          'Communication data when you contact us via email or Signal',
+          'Personal Data: Name, email address, phone number (if provided), and message content submitted via our contact form or direct communication.',
+          'Usage Data: Minimal analytics (e.g., anonymized IP address, page visits) via privacy-first tools; no invasive tracking.',
+          'Third-Party Data: None if you contact us through secure channels (e.g., Signal ID). We might use various proprietary services and protocols to work with you and you consent to their own terms of policy and we will do our best to inform you about the associated risks (Cloudflare, Google, HuggingFace, GitHub, Microsoft, MetaAI, Groq, Discord).',
         ]} />
         <P>
-          We do not use tracking cookies, advertising pixels, or third-party analytics tools.
+          We do not collect sensitive data (e.g., biometric, health) unless explicitly required
+          for a service and consented to by you.
         </P>
       </Section>
 
-      <Section title="3. How we use your data">
-        <P>
-          Data collected is used solely for the following purposes:
-        </P>
+      <Section title="4. How We Use Your Data">
+        <P>We process data solely for:</P>
         <Ul items={[
-          'Responding to your enquiries and delivering contracted services',
-          'Ensuring the security and proper functioning of the site',
-          'Complying with legal obligations',
+          'Responding to your inquiries and delivering Services (e.g., IT, AI, crypto consulting). All data or knowledge (password, infrastructure plans) related to previous collaboration shall be deleted as soon as legally possible.',
+          'Improving the Site with anonymized insights.',
+          'Legal compliance (e.g., tax obligations).',
         ]} />
         <P>
-          We do not sell, rent, or share your personal data with third parties for commercial purposes.
+          Legal bases include explicit consent (opt-in only), contract necessity, and limited
+          legitimate interests (e.g., security). We avoid broad or vague processing purposes.
         </P>
       </Section>
 
-      <Section title="4. Legal basis for processing">
+      <Section title="5. Cookies">
         <P>
-          Processing is based on one or more of the following legal grounds:
+          We use only essential cookies for Site functionality (e.g., session management). No
+          advertising or third-party tracking cookies are deployed. You can disable cookies via
+          browser settings without losing core functionality.
         </P>
+      </Section>
+
+      <Section title="6. Data Sharing">
+        <P>We share data only when unavoidable:</P>
         <Ul items={[
-          'Your explicit consent',
-          'Performance of a contract to which you are a party',
-          'Compliance with a legal obligation',
-          'Our legitimate interests in operating a secure and functional website',
-        ]} />
-      </Section>
-
-      <Section title="5. Data retention">
-        <P>
-          We retain personal data only for as long as necessary for the purposes for which
-          it was collected, or as required by applicable law. Contact data is deleted within
-          3 years of the last interaction unless a contractual relationship requires otherwise.
-        </P>
-      </Section>
-
-      <Section title="6. Your rights">
-        <P>
-          Under the GDPR and nFADP, you have the following rights regarding your personal data:
-        </P>
-        <Ul items={[
-          'Right of access — obtain a copy of the data we hold about you',
-          'Right of rectification — request correction of inaccurate data',
-          'Right of erasure — request deletion of your data',
-          'Right to restriction of processing',
-          'Right to data portability',
-          'Right to object to processing',
+          'With vetted service providers under enhanced data protection agreements exceeding GDPR requirements.',
+          'With authorities, only under a verified legal mandate.',
         ]} />
         <P>
-          To exercise any of these rights, contact us at contact@deltav.cc. We will respond
-          within 30 days.
+          We never sell, rent, or monetize your data. Third-party recipients are contractually
+          bound to delete data after use.
         </P>
       </Section>
 
-      <Section title="7. Security">
+      <Section title="7. Data Retention and Deletion">
+        <P>We delete your data faster than required by law:</P>
+        <Ul items={[
+          'Contact Data: Personal data from inquiries (e.g., name, email, message) is deleted within 90 days of resolving your request, unless you explicitly request otherwise or a contract requires retention.',
+          'Client Records: Data tied to Services (e.g., contracts, invoices) is retained for 1 year after the service ends, unless tax or legal obligations mandate longer (max 5 years under Romanian law), then deleted promptly.',
+          'Usage Data: Anonymized analytics are kept for 30 days, then purged.',
+        ]} />
         <P>
-          We take the security of your data seriously and implement appropriate technical and
-          organisational measures to protect it against unauthorised access, alteration,
-          disclosure or destruction.
-        </P>
-        <P>
-          For sensitive communications, we recommend using Signal (@DeltaV.01), which provides
-          end-to-end encryption by default.
-        </P>
-      </Section>
-
-      <Section title="8. Third-party services">
-        <P>
-          This site embeds a generative animation served from a third-party domain
-          (joannezichenpeng.github.io). No personal data is transmitted to this service.
-          It is loaded in a sandboxed iframe with no interaction or tracking capability.
+          You can request immediate deletion at any time (see Section 8), and we'll comply unless
+          legally prevented. We proactively notify you before deletion deadlines to confirm your
+          preferences.
         </P>
       </Section>
 
-      <Section title="9. Changes to this policy">
+      <Section title="8. Your Enhanced Rights">
+        <P>Beyond GDPR, we offer:</P>
+        <Ul items={[
+          'Access: Full data reports in human-readable format within 15 days (faster than GDPR\'s 30 days).',
+          'Rectification/Erasure: Immediate updates or deletion upon request, no questions asked, unless legally required to retain.',
+          'Restriction/Objection: Stop processing instantly upon request, beyond GDPR\'s scope.',
+          'Portability: Data in open formats within 15 days.',
+          'Consent Withdrawal: Revoke consent anytime with one click or message; no penalties.',
+          'Proactive Disclosure: We\'ll notify you of any data use changes before they occur.',
+          'Complaints: File with us directly or the Romanian National Supervisory Authority for Personal Data Processing (ANSPDCP).',
+        ]} />
+        <P>Exercise rights at contact@deltav.cc or Signal @DeltaV.01.</P>
+      </Section>
+
+      <Section title="9. Security">
+        <P>We exceed GDPR with:</P>
+        <Ul items={[
+          'End-to-end encryption for all communications (e.g., Signal integration).',
+          'Regular third-party security audits, results available upon request.',
+          'Zero-knowledge principles where possible (e.g., we can\'t access your crypto wallet data).',
+        ]} />
+        <P>Despite this, no system is infallible; use at your own risk.</P>
+      </Section>
+
+      <Section title="10. International Transfers">
         <P>
-          We may update this Privacy Policy from time to time. Changes will be posted on this page
-          with an updated date. We encourage you to review this policy periodically.
+          Data stays in the EEA unless you request otherwise. If transferred (e.g., to US
+          providers like Hugging Face), we use enhanced safeguards (e.g., Standard Contractual
+          Clauses plus encryption), exceeding GDPR baselines.
         </P>
       </Section>
 
-      <Section title="10. Contact">
+      <Section title="11. Third-Party Links">
         <P>
-          For any questions or concerns about this Privacy Policy or how we handle your data,
-          please reach out at contact@deltav.cc or via Signal at @DeltaV.01.
+          Links to third-party sites (e.g., Signal, Cloudflare) are not our responsibility. We
+          vet them for privacy but can't control their practices.
+        </P>
+      </Section>
+
+      <Section title="12. Updates">
+        <P>
+          We'll notify you of changes 30 days in advance via email or Site banner. Continued use
+          post-update implies acceptance.
+        </P>
+      </Section>
+
+      <Section title="13. Contact Us">
+        <P>
+          For privacy concerns, reach us at contact@deltav.cc or Signal @DeltaV.01.
         </P>
       </Section>
     </LegalLayout>
