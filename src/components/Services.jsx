@@ -64,7 +64,7 @@ function ServiceCard({ service, delay = 0 }) {
       style={{
         padding: '2rem',
       }}
-      className="flex flex-col gap-6"
+      className="w-full max-w-xl flex flex-col gap-6"
     >
       {/* Index + Title */}
       <motion.div variants={fadeUp} className="flex items-start gap-4">
@@ -204,7 +204,7 @@ export default function Services() {
 
         {/* Grid */}
         <div
-          className="grid grid-cols-1 md:grid-cols-2"
+          className="grid grid-cols-1 md:grid-cols-2 justify-items-center md:justify-items-stretch"
           style={{ gap: '0 2rem' }}
         >
           {services.map((service, i) => (

@@ -79,14 +79,13 @@ export default function Engage() {
           variants={stagger(0, 0.1)}
           initial="hidden"
           animate={contactInView ? 'visible' : 'hidden'}
-          className="grid grid-cols-1 md:grid-cols-3"
+          className="grid grid-cols-1 md:grid-cols-3 justify-items-center md:justify-items-stretch"
           style={{ borderTop: '1px solid var(--color-rule)' }}
         >
           {/* Email */}
           <motion.div
             variants={fadeUp}
-            className="py-8 flex flex-col gap-4"
-            style={{ borderRight: '1px solid var(--color-rule)', paddingRight: '2rem' }}
+            className="w-full max-w-xl py-8 px-4 md:px-0 md:pr-8 flex flex-col gap-4 items-center text-center md:items-start md:text-left md:border-r md:border-[var(--color-rule)]"
           >
             <span
               style={{
@@ -117,12 +116,7 @@ export default function Engage() {
           {/* Signal */}
           <motion.div
             variants={fadeUp}
-            className="py-8 flex flex-col gap-4"
-            style={{
-              borderRight: '1px solid var(--color-rule)',
-              paddingLeft: '2rem',
-              paddingRight: '2rem',
-            }}
+            className="w-full max-w-xl py-8 px-4 md:px-8 flex flex-col gap-4 items-center text-center md:items-start md:text-left md:border-r md:border-[var(--color-rule)]"
           >
             <span
               style={{
@@ -147,9 +141,8 @@ export default function Engage() {
                 border: 'none',
                 padding: 0,
                 cursor: 'pointer',
-                textAlign: 'left',
               }}
-              className="hover:text-[var(--color-gold)] transition-colors duration-300"
+              className="text-center md:text-left hover:text-[var(--color-gold)] transition-colors duration-300"
             >
               @DeltaV.01
               <span
@@ -170,8 +163,7 @@ export default function Engage() {
           {/* Note */}
           <motion.div
             variants={fadeUp}
-            className="py-8 flex flex-col justify-between gap-6"
-            style={{ paddingLeft: '2rem' }}
+            className="w-full max-w-xl py-8 px-4 md:pl-8 md:px-0 flex flex-col justify-between gap-6 items-center text-center md:items-start md:text-left"
           >
             <p
               style={{

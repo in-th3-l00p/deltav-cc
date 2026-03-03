@@ -28,11 +28,12 @@ function Pillar({ pillar, index }) {
         borderTop: '1px solid var(--color-rule)',
         paddingTop: '2rem',
         paddingBottom: '2rem',
-        ...(index === 0
-          ? { borderRight: '1px solid var(--color-rule)', paddingRight: '3rem' }
-          : { paddingLeft: '3rem' }),
       }}
-      className="flex flex-col gap-6"
+      className={`w-full max-w-xl flex flex-col gap-6 items-center text-center md:items-start md:text-left ${
+        index === 0
+          ? 'md:border-r md:border-[var(--color-rule)] md:pr-12'
+          : 'md:pl-12'
+      }`}
     >
       <motion.span
         variants={fadeUp}
@@ -125,7 +126,7 @@ export default function WhyUs() {
         </motion.div>
 
         {/* Pillars */}
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center md:justify-items-stretch">
           {pillars.map((pillar, i) => (
             <Pillar key={pillar.title} pillar={pillar} index={i} />
           ))}
