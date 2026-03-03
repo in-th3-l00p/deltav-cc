@@ -92,7 +92,7 @@ export default function Navbar() {
                   initial={{ opacity: 0, x: -16 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, ease: EASE, delay: i * 0.07 }}
-                  style={{ fontFamily: 'var(--font-display)', fontSize: '2.25rem', letterSpacing: '-0.02em' }}
+                  style={{ fontFamily: 'var(--font-display)', fontSize: '1.75rem', letterSpacing: '-0.02em' }}
                   className="text-[var(--color-paper)] hover:text-[var(--color-gold)] transition-colors duration-300"
                 >
                   {label}

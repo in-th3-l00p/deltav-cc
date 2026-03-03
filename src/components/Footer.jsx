@@ -20,8 +20,8 @@ export default function Footer() {
         borderTop: '1px solid var(--color-rule)',
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-        <motion.div variants={fadeUp}>
+      <div className="max-w-7xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center md:items-center justify-between gap-6 text-center md:text-left">
+        <motion.div variants={fadeUp} className="w-full md:w-auto flex justify-center md:justify-start">
           <Link
             to="/"
             style={{
@@ -36,7 +36,7 @@ export default function Footer() {
           </Link>
         </motion.div>
 
-        <motion.nav variants={fadeUp} className="flex items-center gap-6 flex-wrap">
+        <motion.nav variants={fadeUp} className="w-full md:w-auto flex items-center justify-center md:justify-start gap-6 flex-wrap">
           {[
             { label: 'CGU', to: '/cgu' },
             { label: 'Privacy Policy', to: '/privacy' },
@@ -60,6 +60,7 @@ export default function Footer() {
 
         <motion.p
           variants={fadeUp}
+          className="w-full md:w-auto"
           style={{
             fontFamily: 'var(--font-sans)',
             fontSize: '0.6875rem',
