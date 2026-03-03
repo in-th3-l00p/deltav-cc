@@ -27,6 +27,7 @@ export default function Footer() {
             style={{
               fontFamily: 'var(--font-display)',
               fontSize: '1.125rem',
+              fontWeight: 500,
               letterSpacing: '-0.02em',
               color: 'var(--color-paper-muted)',
             }}

@@ -36,7 +36,7 @@ export default function Navbar() {
         <a
           href="#"
           style={{ fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}
-          className="text-xl font-light text-[var(--color-paper)] hover:text-[var(--color-gold)] transition-colors duration-300"
+          className="text-xl font-medium text-[var(--color-paper)] hover:text-[var(--color-gold)] transition-colors duration-300"
         >
           ΔV
         </a>

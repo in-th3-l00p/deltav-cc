@@ -15,7 +15,7 @@ export default function LegalLayout({ title, subtitle, children }) {
       >
         <Link
           to="/"
-          style={{ fontFamily: 'var(--font-display)', letterSpacing: '-0.02em', fontSize: '1.25rem' }}
+          style={{ fontFamily: 'var(--font-display)', letterSpacing: '-0.02em', fontSize: '1.25rem', fontWeight: 500 }}
           className="text-[var(--color-paper)] hover:text-[var(--color-gold)] transition-colors duration-300"
         >
           ΔV
